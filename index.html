@@ -9,14 +9,27 @@
 
 <body>
 
-<h1>Movie Search</h1>
+<h1>🎬 Movie Search App</h1>
 
 <div class="search-box">
     <input type="text" id="movieInput" placeholder="Enter movie name">
     <button onclick="searchMovie()">Search</button>
+    <button onclick="showAll()">Show All</button>
 </div>
 
-<div id="movieResult"></div>
+<div class="filters">
+    <select id="genreFilter" onchange="filterMovies()">
+        <option value="all">All Genres</option>
+        <option value="Action">Action</option>
+        <option value="Romance">Romance</option>
+        <option value="Drama">Drama</option>
+        <option value="Sci-Fi">Sci-Fi</option>
+    </select>
+
+    <button onclick="sortByRating()">Sort by Rating ⭐</button>
+</div>
+
+<div id="movieResult" class="movie-container"></div>
 
 <script src="script.js"></script>
 </body>
