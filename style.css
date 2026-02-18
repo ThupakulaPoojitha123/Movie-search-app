@@ -1,0 +1,80 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Segoe UI, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #a5ec6b, #74430c);
+    text-align: center;
+    padding: 20px;
+    color: white;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.search-box input {
+    padding: 12px;
+    width: 220px;
+    border-radius: 8px;
+    border: none;
+}
+
+.search-box button,
+.filters button,
+.filters select {
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.search-box button {
+    background: #e378a3;
+    font-weight: bold;
+}
+
+.movie-container {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.movie-card {
+    background: rgba(255, 255, 255, 0.9);
+    color: black;
+    width: 260px;
+    padding: 15px;
+    border-radius: 12px;
+    margin: 10px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+    transition: 0.3s;
+}
+
+.movie-card:hover {
+    transform: scale(1.05);
+}
+
+.movie-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.rating {
+    padding: 4px 8px;
+    border-radius: 6px;
+    color: white;
+    display: inline-block;
+    margin-bottom: 6px;
+}
+
+.green { background: green; }
+.orange { background: orange; }
+.red { background: red; }
