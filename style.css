@@ -48,7 +48,7 @@ h1 {
 }
 
 .movie-card {
-    background: rgba(255, 255, 255, 0.9);
+    background: rgba(255, 255, 255, 0.95);
     color: black;
     width: 260px;
     padding: 15px;
@@ -78,3 +78,25 @@ h1 {
 .green { background: green; }
 .orange { background: orange; }
 .red { background: red; }
+
+.button-group {
+    margin-top: 10px;
+}
+
+.button-group button {
+    padding: 7px 10px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin: 5px 3px;
+    color: white;
+    font-weight: bold;
+}
+
+.trailer-btn {
+    background: #ff9800;
+}
+
+.imdb-btn {
+    background: #000000;
+}
